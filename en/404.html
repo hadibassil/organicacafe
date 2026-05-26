@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Organica Café</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #f8f9e6;
+      color: #333509;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 600px;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .leaf-bg {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(194, 199, 63, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(163, 178, 43, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(212, 221, 102, 0.08) 0%, transparent 70%);
+      z-index: -1;
+    }
+
+    .error-code {
+      font-size: clamp(5rem, 18vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      color: #c2c73f;
+      margin-bottom: 0.5rem;
+    }
+
+    .leaf-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
+      color: #c2c73f;
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #525412;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: #71751b;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .divider-line {
+      width: 60px;
+      height: 2px;
+      background: rgba(194, 199, 63, 0.3);
+    }
+
+    .divider-dot {
+      width: 8px;
+      height: 8px;
+      background: rgba(194, 199, 63, 0.5);
+      border-radius: 50%;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #c2c73f;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #acb22b;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(194, 199, 63, 0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #71751b;
+      border: 2px solid #c2c73f;
+    }
+
+    .btn-secondary:hover {
+      background: #c2c73f;
+      color: white;
+    }
+
+    .quick-links {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(194, 199, 63, 0.2);
+    }
+
+    .quick-links > p {
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
+
+    .quick-links a {
+      color: #71751b;
+      text-decoration: none;
+      margin: 0 0.75rem;
+      font-size: 0.875rem;
+      transition: color 0.2s ease;
+    }
+
+    .quick-links a:hover {
+      color: #525412;
+    }
+
+    .lang-info {
+      font-size: 0.75rem;
+      color: #929822;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="leaf-bg"></div>
+
+  <div class="container">
+    <svg class="leaf-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 20.25c0 0-7.5-4.5-7.5-11.25S12 0 12 0s7.5 4.5 7.5 11.25S12 20.25 12 20.25z"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 20.25V12"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.5 15.5c0-3 2-5.5 4-7.5"/>
+    </svg>
+
+    <div class="error-code">404</div>
+    <h1 id="title">Page Not Found</h1>
+    <p id="description">The page you're looking for seems to have wandered off. Don't worry, we've all been there! Let's get you back on track.</p>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <div>
+      <p id="subtitle">You can always find your way back to our cozy home page</p>
+      <a href="/" class="btn btn-primary" id="homeLink">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+        </svg>
+        <span id="homeText">Return Home</span>
+      </a>
+    </div>
+
+    <div class="quick-links">
+      <p>Quick links</p>
+      <a href="/menus" id="menusLink">Our Menus</a>
+      <span>•</span>
+      <a href="/locations" id="locationsLink">Locations</a>
+      <span>•</span>
+      <a href="/about" id="aboutLink">About Us</a>
+    </div>
+
+    <p class="lang-info" id="langInfo"></p>
+  </div>
+
+  <script>
+    const translations = {
+      en: {
+        title: 'Page Not Found',
+        description: "The page you're looking for seems to have wandered off. Don't worry, we've all been there! Let's get you back on track.",
+        subtitle: 'You can always find your way back to our cozy home page',
+        homeText: 'Return Home',
+        menus: 'Our Menus',
+        locations: 'Locations',
+        about: 'About Us'
+      },
+      fr: {
+        title: 'Page non trouvée',
+        description: "La page que vous recherchez semble s'être égarée. Ne vous inquiétez pas, nous y sommes tous passés ! Revenez sur la bonne voie.",
+        subtitle: 'Vous pouvez toujours trouver le chemin vers notre accueille',
+        homeText: "Retour à l'accueil",
+        menus: 'Nos menus',
+        locations: 'Nos locations',
+        about: 'À propos'
+      },
+      ar: {
+        title: 'الصفحة غير موجودة',
+        description: 'الصفحة التي تبحث عنها تبدو وكأنها تائهة. لا تقلق، لقد مررنا جميعًا بذلك! دعنا نعيدك إلى المسار الصحيح.',
+        subtitle: 'يمكنك دائمًا العثور على طريق العودة إلى صفحتنا الرئيسية المريحة',
+        homeText: 'العودة إلى الصفحة الرئيسية',
+        menus: 'قوائم الطعام',
+        locations: 'المواقع',
+        about: 'من نحن'
+      },
+      af: {
+        title: 'Bladsy nie gevind nie',
+        description: 'Die bladsy waarna jy soek lyk asof dit verdwaal het. Moenie bekommerd nie nie, almal is aldaar! Laat ons jou op die regte pad sit.',
+        subtitle: 'Jy kan altyd die pad terug na ons gemaklike tuisblad vind',
+        homeText: 'Keer terug huis toe',
+        menus: 'Ons kospad',
+        locations: 'Lokasies',
+        about: 'Oor ons'
+      }
+    };
+
+    // Detect language from URL path
+    const supportedLangs = ['en', 'fr', 'ar', 'af'];
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    let lang = 'en';
+    
+    if (pathParts.length > 0 && supportedLangs.includes(pathParts[0])) {
+      lang = pathParts[0];
+    } else if (pathParts[0] && pathParts[0].length === 2 && !supportedLangs.includes(pathParts[0])) {
+      // Could be a locale like 'en/' or wrong locale
+      lang = 'en';
+    }
+
+    const t = translations[lang] || translations.en;
+
+    document.getElementById('title').textContent = t.title;
+    document.getElementById('description').textContent = t.description;
+    document.getElementById('subtitle').textContent = t.subtitle;
+    document.getElementById('homeText').textContent = t.homeText;
+    document.getElementById('menusLink').textContent = t.menus;
+    document.getElementById('locationsLink').textContent = t.locations;
+    document.getElementById('aboutLink').textContent = t.about;
+
+    // Update links with language prefix
+    const baseUrl = '/' + lang + '/';
+    document.getElementById('homeLink').href = baseUrl;
+    document.getElementById('menusLink').href = baseUrl + 'menus';
+    document.getElementById('locationsLink').href = baseUrl + 'locations';
+    document.getElementById('aboutLink').href = baseUrl + 'about';
+
+    document.documentElement.lang = lang;
+    document.getElementById('langInfo').textContent = 'Current language: ' + lang.toUpperCase();
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Organica Cafe</title>
+    <meta http-equiv="refresh" content="0; url=/en/" />
+    <script>
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith('fr')) {
+        window.location.href = '/fr/';
+      } else if (userLang.startsWith('ar')) {
+        window.location.href = '/ar/';
+      } else if (userLang.startsWith('af')) {
+        window.location.href = '/af/';
+      } else {
+        window.location.href = '/en/';
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+    <p><a href="/en/">English</a> | <a href="/fr/">Français</a> | <a href="/ar/">العربية</a> | <a href="/af/">Afrikaans</a></p>
+  </body>
+</html>
